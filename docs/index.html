@@ -176,7 +176,7 @@
         <nav>
             <a href="#skills">精选推荐</a>
             <a href="#weekly">每周更新</a>
-            <a href="#subscribe">订阅</a>
+            <a href="#about">关于</a>
         </nav>
     </div>
 </header>
@@ -193,7 +193,7 @@
     <div class="stats">
         <div class="stat-item"><div class="stat-num">23万+</div><div class="stat-label">Skills 总量</div></div>
         <div class="stat-item"><div class="stat-num">50+</div><div class="stat-label">已实测</div></div>
-        <div class="stat-item"><div class="stat-num">12</div><div class="stat-label">本期推荐</div></div>
+        <div class="stat-item"><div class="stat-num">25</div><div class="stat-label">本期推荐</div></div>
         <div class="stat-item"><div class="stat-num">每周</div><div class="stat-label">更新频率</div></div>
     </div>
 
@@ -205,6 +205,7 @@
         <button class="filter-btn" onclick="filterSkills('office')">📄 办公</button>
         <button class="filter-btn" onclick="filterSkills('productivity')">⚡ 效率</button>
         <button class="filter-btn" onclick="filterSkills('creative')">💡 创意</button>
+        <button class="filter-btn" onclick="filterSkills('devops')">🔧 运维</button>
     </div>
 
     <div class="skills-grid" id="skills-grid">
@@ -389,6 +390,201 @@
             <div class="click-hint">点击查看详情 →</div>
         </div>
 
+        <!-- Skill 13: Code Reviewer -->
+        <div class="skill-card" data-category="dev" data-tier="s" data-id="code-reviewer" onclick="openDetail('code-reviewer')">
+            <div class="skill-header">
+                <div class="skill-name">Code Reviewer</div>
+                <span class="skill-tier tier-s">🔥 必备神器</span>
+            </div>
+            <div class="skill-desc">专业级代码审查，自动检测 Bug、性能瓶颈和安全漏洞。支持主流语言和框架。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★★</span>
+                <span>📦 45.2K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">代码质量</span><span class="skill-tag">安全审计</span><span class="skill-tag">自动审查</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 14: SQL Expert -->
+        <div class="skill-card" data-category="dev" data-tier="a" data-id="sql-expert" onclick="openDetail('sql-expert')">
+            <div class="skill-header">
+                <div class="skill-name">SQL Expert</div>
+                <span class="skill-tier tier-a">⭐ 强烈推荐</span>
+            </div>
+            <div class="skill-desc">SQL 查询优化大师，从慢查询诊断到索引建议，让你的数据库飞起来。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★☆</span>
+                <span>📦 32.1K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">数据库</span><span class="skill-tag">性能优化</span><span class="skill-tag">查询分析</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 15: Git Helper -->
+        <div class="skill-card" data-category="dev productivity" data-tier="a" data-id="git-helper" onclick="openDetail('git-helper')">
+            <div class="skill-header">
+                <div class="skill-name">Git Helper</div>
+                <span class="skill-tier tier-a">⭐ 强烈推荐</span>
+            </div>
+            <div class="skill-desc">Git 工作流助手，智能解决冲突、生成规范 commit message、梳理分支策略。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★☆</span>
+                <span>📦 28.7K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">版本控制</span><span class="skill-tag">冲突解决</span><span class="skill-tag">工作流</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 16: Docker Pilot -->
+        <div class="skill-card" data-category="devops dev" data-tier="a" data-id="docker-pilot" onclick="openDetail('docker-pilot')">
+            <div class="skill-header">
+                <div class="skill-name">Docker Pilot</div>
+                <span class="skill-tier tier-a">⭐ 强烈推荐</span>
+            </div>
+            <div class="skill-desc">容器化部署专家，一键生成 Dockerfile、docker-compose，排查容器故障。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★☆</span>
+                <span>📦 26.3K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">容器化</span><span class="skill-tag">DevOps</span><span class="skill-tag">部署</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 17: Security Guard -->
+        <div class="skill-card" data-category="devops dev" data-tier="a" data-id="security-guard" onclick="openDetail('security-guard')">
+            <div class="skill-header">
+                <div class="skill-name">Security Guard</div>
+                <span class="skill-tier tier-a">⭐ 强烈推荐</span>
+            </div>
+            <div class="skill-desc">代码安全卫士，扫描 XSS/CSRF/注入漏洞，输出 OWASP 标准安全报告。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★★</span>
+                <span>📦 31.5K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">安全</span><span class="skill-tag">漏洞扫描</span><span class="skill-tag">OWASP</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 18: API Designer -->
+        <div class="skill-card" data-category="dev" data-tier="a" data-id="api-designer" onclick="openDetail('api-designer')">
+            <div class="skill-header">
+                <div class="skill-name">API Designer</div>
+                <span class="skill-tier tier-a">⭐ 强烈推荐</span>
+            </div>
+            <div class="skill-desc">RESTful API 设计专家，自动生成 OpenAPI 文档、Mock 数据和接口测试用例。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★☆</span>
+                <span>📦 24.9K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">API设计</span><span class="skill-tag">OpenAPI</span><span class="skill-tag">文档生成</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 19: Test Generator -->
+        <div class="skill-card" data-category="dev" data-tier="b" data-id="test-generator" onclick="openDetail('test-generator')">
+            <div class="skill-header">
+                <div class="skill-name">Test Generator</div>
+                <span class="skill-tier tier-b">👍 值得一试</span>
+            </div>
+            <div class="skill-desc">自动化测试生成器，根据代码自动生成单元测试、集成测试和 E2E 测试。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★☆</span>
+                <span>📦 22.1K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">测试</span><span class="skill-tag">自动化</span><span class="skill-tag">覆盖率</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 20: Doc Writer -->
+        <div class="skill-card" data-category="dev productivity" data-tier="b" data-id="doc-writer" onclick="openDetail('doc-writer')">
+            <div class="skill-header">
+                <div class="skill-name">Doc Writer</div>
+                <span class="skill-tier tier-b">👍 值得一试</span>
+            </div>
+            <div class="skill-desc">技术文档撰写助手，从代码注释自动生成 API 文档、README 和变更日志。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★☆</span>
+                <span>📦 19.8K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">文档</span><span class="skill-tag">README</span><span class="skill-tag">自动生成</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 21: Translation Pro -->
+        <div class="skill-card" data-category="office productivity" data-tier="b" data-id="translation-pro" onclick="openDetail('translation-pro')">
+            <div class="skill-header">
+                <div class="skill-name">Translation Pro</div>
+                <span class="skill-tier tier-b">👍 值得一试</span>
+            </div>
+            <div class="skill-desc">专业翻译助手，支持 50+ 语言互译，保持技术术语准确性和上下文语境。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★☆</span>
+                <span>📦 27.3K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">翻译</span><span class="skill-tag">多语言</span><span class="skill-tag">术语库</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 22: Data Analyst -->
+        <div class="skill-card" data-category="productivity" data-tier="b" data-id="data-analyst" onclick="openDetail('data-analyst')">
+            <div class="skill-header">
+                <div class="skill-name">Data Analyst</div>
+                <span class="skill-tier tier-b">👍 值得一试</span>
+            </div>
+            <div class="skill-desc">数据分析利器，从 CSV/Excel 到可视化报告，一句话生成洞察结论。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★☆</span>
+                <span>📦 23.6K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">数据分析</span><span class="skill-tag">可视化</span><span class="skill-tag">Excel</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 23: Prompt Engineer -->
+        <div class="skill-card" data-category="productivity creative" data-tier="b" data-id="prompt-engineer" onclick="openDetail('prompt-engineer')">
+            <div class="skill-header">
+                <div class="skill-name">Prompt Engineer</div>
+                <span class="skill-tier tier-b">👍 值得一试</span>
+            </div>
+            <div class="skill-desc">提示词工程专家，帮你构建结构化 Prompt、Chain-of-Thought 和 Few-Shot 模板。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★☆</span>
+                <span>📦 29.4K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">Prompt</span><span class="skill-tag">AI调优</span><span class="skill-tag">模板</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 24: Markdown Master -->
+        <div class="skill-card" data-category="office productivity" data-tier="c" data-id="markdown-master" onclick="openDetail('markdown-master')">
+            <div class="skill-header">
+                <div class="skill-name">Markdown Master</div>
+                <span class="skill-tier tier-c">💡 效率提升</span>
+            </div>
+            <div class="skill-desc">Markdown 排版美化师，自动格式化、生成目录、转换 HTML/PDF。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★☆☆</span>
+                <span>📦 15.2K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">Markdown</span><span class="skill-tag">排版</span><span class="skill-tag">文档转换</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
+        <!-- Skill 25: Self-Improving Agent -->
+        <div class="skill-card" data-category="productivity dev" data-tier="a" data-id="self-improving-agent" onclick="openDetail('self-improving-agent')">
+            <div class="skill-header">
+                <div class="skill-name">Self-Improving Agent</div>
+                <span class="skill-tier tier-a">⭐ 强烈推荐</span>
+            </div>
+            <div class="skill-desc">自进化 AI 助手，从错误中学习并持续优化自身能力，越用越聪明。</div>
+            <div class="skill-meta">
+                <span class="skill-stars">★★★★★</span>
+                <span>📦 38.7K 安装</span>
+            </div>
+            <div class="skill-tags"><span class="skill-tag">自学习</span><span class="skill-tag">记忆优化</span><span class="skill-tag">持续进化</span></div>
+            <div class="click-hint">点击查看详情 →</div>
+        </div>
+
     </div>
 </section>
 
@@ -399,6 +595,39 @@
         <div id="detailContent"></div>
     </div>
 </div>
+
+<!-- About Section -->
+<section class="cta" id="about">
+    <h2>关于 SkillStore 精选</h2>
+    <p style="max-width:600px;margin:0 auto 32px;">从 35 万个 Skills 中筛选出真正值得安装的精品，为你节省试错时间。</p>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:900px;margin:0 auto 32px;">
+        <div style="background:#111;border:1px solid #1a1a1a;border-radius:16px;padding:28px;text-align:left;">
+            <div style="font-size:36px;margin-bottom:12px;">🎯</div>
+            <h3 style="color:#fff;font-size:18px;margin-bottom:8px;">我们的使命</h3>
+            <p style="color:#888;font-size:14px;line-height:1.7;">让每个开发者、创作者和效率追求者，都能快速找到能真正提升生产力的 AI 技能包。</p>
+        </div>
+        <div style="background:#111;border:1px solid #1a1a1a;border-radius:16px;padding:28px;text-align:left;">
+            <div style="font-size:36px;margin-bottom:12px;">📊</div>
+            <h3 style="color:#fff;font-size:18px;margin-bottom:8px;">数据说话</h3>
+            <p style="color:#888;font-size:14px;line-height:1.7;">已评测 500+ Skills，精选 25 个推荐上架。每个都经过实际使用验证，不是随便列出来的。</p>
+        </div>
+        <div style="background:#111;border:1px solid #1a1a1a;border-radius:16px;padding:28px;text-align:left;">
+            <div style="font-size:36px;margin-bottom:12px;">⚡</div>
+            <h3 style="color:#fff;font-size:18px;margin-bottom:8px;">保持更新</h3>
+            <p style="color:#888;font-size:14px;line-height:1.7;">每周追踪新发布的 Skills，持续更新精选榜单。关注我们获取最新推荐。</p>
+        </div>
+    </div>
+
+    <div style="text-align:center;padding:32px;background:#111;border:1px solid #1a1a1a;border-radius:16px;max-width:600px;margin:0 auto;">
+        <p style="color:#666;font-size:14px;margin-bottom:8px;">SkillStore 精选 &copy; 2026 &mdash; 用 AI 为 AI 服务</p>
+        <p style="color:#444;font-size:13px;">本站为非官方社区项目，与 Anthropic 无关联。所有 Skill 评测基于独立测试。</p>
+    </div>
+</section>
+
+<footer>
+    BestSkills 精选 &copy; 2026 — 从 35 万个 Skills 中筛选出真正值得安装的精品
+</footer>
 
 <!-- ==================== SKILL DETAILS DATA ==================== -->
 <script>
@@ -1033,6 +1262,424 @@ output_template: |
     useCases: ["上线前的网站体检", "SEO 优化诊断", "竞品网站分析", "定期网站健康巡检"],
     pros: ["免费且全面的网站审计", "输出结构清晰的分级报告", "每个问题附带修复建议"],
     cons: ["基于公开可见信息的静态分析", "不能检测服务端性能", "部分高级功能需要联网查询"]
+},
+
+'code-reviewer': {
+    name: 'Code Reviewer',
+    tier: '🔥 必备神器',
+    tierClass: 'tier-s',
+    desc: '专业级代码审查 AI 助手，自动检测代码中的 Bug、性能瓶颈、安全漏洞和反模式。支持 JavaScript、TypeScript、Python、Go、Rust、Java、C++ 等主流语言。',
+    installSteps: [
+        { step: '安装 Code Reviewer Skill', detail: '在 Claude Code 中运行 /install code-reviewer 或在 Skills 市场搜索"Code Reviewer"点击安装。' },
+        { step: '配置审查规则', detail: '在 .claude/ 目录下创建 review-config.json，指定语言规范、安全扫描级别和自定义规则集。' },
+        { step: '集成到 CI 流水线', detail: '添加 claude-code review --ci 命令到 GitHub Actions/GitLab CI，实现 PR 自动审查。' }
+    ],
+    config: `{
+  "languages": ["javascript", "typescript", "python", "go"],
+  "rules": {
+    "security": "strict",
+    "performance": "warning",
+    "style": "suggestion",
+    "complexity": { "max": 15, "action": "warn" }
+  },
+  "customPatterns": [
+    { "pattern": "TODO|FIXME|HACK", "action": "warn", "message": "清理技术债务" }
+  ],
+  "outputFormat": ["console", "sarif", "github-pr-comment"]
+}`,
+    useCases: ['PR 自动代码审查', '遗留代码重构评估', '安全漏洞扫描', '团队编码规范统一', '新人 Code Review 培训'],
+    pros: ['检测准确率高，误报率低', '支持 20+ 编程语言', '可集成 CI/CD 自动化', '输出 SARIF 标准格式', '自定义规则灵活'],
+    cons: ['超大型文件分析较慢', '某些领域特定逻辑需要调优', '免费版有每日审查次数限制']
+},
+
+'sql-expert': {
+    name: 'SQL Expert',
+    tier: '⭐ 强烈推荐',
+    tierClass: 'tier-a',
+    desc: 'SQL 查询优化专家，从慢查询诊断、执行计划分析到索引建议，全方位提升数据库性能。支持 MySQL、PostgreSQL、SQLite、SQL Server 等。',
+    installSteps: [
+        { step: '安装 SQL Expert', detail: '运行 /install sql-expert 安装。首次使用需配置数据库连接信息。' },
+        { step: '连接数据库', detail: '在 .claude/sql-config.json 配置 DSN 连接字符串，或通过环境变量 DATABASE_URL 设置。' },
+        { step: '开始优化', detail: '输入 SQL 语句或粘贴慢查询日志，AI 会分析执行计划并给出优化建议。' }
+    ],
+    config: `{
+  "database": {
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "database": "app_db"
+  },
+  "optimization": {
+    "slowQueryThresholdMs": 1000,
+    "suggestIndexes": true,
+    "analyzeExplainPlan": true,
+    "checkTableSchema": true
+  },
+  "output": {
+    "includeBeforeAfter": true,
+    "explainReasoning": true,
+    "riskLevel": "conservative"
+  }
+}`,
+    useCases: ['慢查询排查与优化', '数据库索引设计', 'SQL 语句重构', '数据库迁移前性能评估', '开发阶段 SQL 审查'],
+    pros: ['可视化执行计划分析', '一键生成索引建议', '支持多种数据库方言', '优化前后性能对比', '安全模式下不执行写操作'],
+    cons: ['需要数据库只读权限', '复杂子查询优化建议可能不完美', '不支持 NoSQL 数据库']
+},
+
+'git-helper': {
+    name: 'Git Helper',
+    tier: '⭐ 强烈推荐',
+    tierClass: 'tier-a',
+    desc: '智能 Git 工作流助手，自动生成规范的 commit message、解决合并冲突、梳理分支策略，让版本控制不再头疼。',
+    installSteps: [
+        { step: '安装 Git Helper', detail: '/install git-helper 一键安装，自动识别项目中的 Git 仓库。' },
+        { step: '配置 Commit 规范', detail: '可选择 Conventional Commits/Angular/自定义规范，设置 commit message 模板。' },
+        { step: '开始使用', detail: 'git add 后运行 /git-commit 自动生成 message；冲突时运行 /git-resolve 获取解决建议。' }
+    ],
+    config: `{
+  "commitStyle": "conventional",
+  "conventionalTypes": ["feat", "fix", "docs", "style", "refactor", "test", "chore", "perf", "ci"],
+  "maxCommitMessageLength": 72,
+  "autoStageRelatedFiles": true,
+  "branchStrategy": {
+    "main": "main",
+    "develop": "develop",
+    "featurePrefix": "feature/",
+    "hotfixPrefix": "hotfix/"
+  },
+  "conflictResolution": {
+    "autoDetect": true,
+    "preferOurs": ["package-lock.json", "yarn.lock", "*.min.js"],
+    "preferTheirs": []
+  }
+}`,
+    useCases: ['日常 Commit Message 生成', '合并冲突智能解决', '分支策略管理', 'Git 历史整理', '团队协作规范落地'],
+    pros: ['commit message 规范且语义化', '冲突解决建议精准', '支持主流分支工作流', '无需额外 GUI 工具', '与 IDE 无缝集成'],
+    cons: ['大型 mono-repo 初始化较慢', '极端复杂的合并冲突仍需人工判断', '需要项目有 Git 仓库']
+},
+
+'docker-pilot': {
+    name: 'Docker Pilot',
+    tier: '⭐ 强烈推荐',
+    tierClass: 'tier-a',
+    desc: '容器化部署专家，一键生成优化的 Dockerfile 和 docker-compose.yml，诊断容器故障，优化镜像大小和构建速度。',
+    installSteps: [
+        { step: '安装 Docker Pilot', detail: '/install docker-pilot 安装，自动扫描项目中已有的 Docker 配置。' },
+        { step: '初始化 Docker 配置', detail: '在项目根目录运行 /docker-init，根据技术栈自动生成 Dockerfile 和 docker-compose.yml。' },
+        { step: '构建与调试', detail: '/docker-build 构建镜像并检查优化建议；/docker-logs 查看容器日志排查问题。' }
+    ],
+    config: `{
+  "dockerfile": {
+    "baseImagePreference": "alpine",
+    "multiStageBuild": true,
+    "optimizeLayers": true,
+    "maxImageSizeMB": 500
+  },
+  "compose": {
+    "services": ["app", "db", "cache"],
+    "networkMode": "bridge",
+    "restartPolicy": "unless-stopped",
+    "healthcheck": true
+  },
+  "security": {
+    "runAsNonRoot": true,
+    "readOnlyRootFs": false,
+    "noSecretsInEnv": true
+  }
+}`,
+    useCases: ['应用容器化迁移', '微服务编排配置', 'CI/CD Docker 构建', '容器故障排查', '镜像瘦身优化'],
+    pros: ['多阶段构建减少镜像体积 60%+', '自动添加健康检查和安全配置', '支持 Node/Python/Go/Java/Rust 等栈', 'docker-compose 一键启动完整环境', '构建缓存优化加速 3x'],
+    cons: ['需要本地安装 Docker Desktop', '特殊依赖的项目可能需手动调整', 'Windows 容器支持有限']
+},
+
+'security-guard': {
+    name: 'Security Guard',
+    tier: '⭐ 强烈推荐',
+    tierClass: 'tier-a',
+    desc: '代码安全卫士，按照 OWASP Top 10 标准自动扫描 XSS、CSRF、SQL 注入、路径遍历等常见漏洞，输出专业的安全审计报告。',
+    installSteps: [
+        { step: '安装 Security Guard', detail: '/install security-guard 安装，支持 CLI 和 IDE 插件两种模式。' },
+        { step: '选择安全基线', detail: '可选 OWASP Top 10/SANS Top 25/CWE 自定义规则集，设置扫描严格程度。' },
+        { step: '执行安全扫描', detail: '/sec-scan 扫描整个项目；/sec-scan --file path/to/file.ts 扫描单个文件。报告以 Markdown 格式输出。' }
+    ],
+    config: `{
+  "owaspTop10": {
+    "A01_BrokenAccessControl": "critical",
+    "A02_CryptographicFailures": "critical",
+    "A03_Injection": "critical",
+    "A04_InsecureDesign": "high",
+    "A05_SecurityMisconfig": "medium",
+    "A06_VulnerableComponents": "high",
+    "A07_AuthFailures": "critical",
+    "A08_DataIntegrity": "medium",
+    "A09_LogMonitor": "low",
+    "A10_SSRF": "high"
+  },
+  "excludePaths": ["node_modules/**", "vendor/**", "*.min.*"],
+  "reportFormat": ["markdown", "console"],
+  "failOn": "critical"
+}`,
+    useCases: ['上线前安全扫描', '合规性审计（SOC2/GDPR）', '依赖包漏洞检测', '安全编码培训材料', '定期安全巡检'],
+    pros: ['覆盖 OWASP Top 10 全部类别', '漏洞分级清晰（Critical/Medium/Low）', '附带具体修复代码示例', '支持依赖包 CVE 扫描', '可接入 CI 阻断高危漏洞合并'],
+    cons: ['静态分析无法检测运行时漏洞', '某些业务逻辑漏洞需人工审核', '大型项目全量扫描耗时较长']
+},
+
+'api-designer': {
+    name: 'API Designer',
+    tier: '⭐ 强烈推荐',
+    tierClass: 'tier-a',
+    desc: 'RESTful API 设计专家，从接口规划到 OpenAPI 3.0 文档生成、Mock 数据创建和测试用例编写，一站式 API 开发体验。',
+    installSteps: [
+        { step: '安装 API Designer', detail: '/install api-designer 安装。识别现有项目框架后自动适配。' },
+        { step: '描述 API 需求', detail: '自然语言描述接口功能，如"用户注册接口，接收邮箱密码，返回 JWT token"。' },
+        { step: '生成与导出', detail: '/api-generate 生成 OpenAPI YAML + Mock Server + 测试套件三件套。' }
+    ],
+    config: `{
+  "openapi": "3.0.3",
+  "defaults": {
+    "authType": "bearerJWT",
+    "responseFormat": "json",
+    "paginationStyle": "cursor-based",
+    "errorResponseStyle": "RFC7807"
+  },
+  "namingConvention": {
+    "paths": "kebab-case",
+    "queryParams": "camelCase",
+    "requestBody": "camelCase"
+  },
+  "features": {
+    "generateMockServer": true,
+    "generateTests": true,
+    "generateClientSDK": false,
+    "versioning": "url-path"
+  }
+}`,
+    useCases: ['新 API 接口设计', 'Legacy API 文档补全', '前后端协作契约定义', 'API Mock 快速原型', '接口变更影响分析'],
+    pros: ['OpenAPI 3.0 标准 compliant', 'Mock Server 一键启动', '自动生成请求/响应示例', '支持 API 版本管理', '可直接导入 Postman/Swagger'],
+    cons: ['GraphQL/gRPC 支持有限', '复杂嵌套 schema 需手动调整', '不支持现有代码逆向生成文档']
+},
+
+'test-generator': {
+    name: 'Test Generator',
+    tier: '👍 值得一试',
+    tierClass: 'tier-b',
+    desc: '自动化测试生成器，阅读源码后自动生成单元测试、集成测试和 E2E 测试，支持 Jest/Vitest/Mocha/Pytest 等主流框架。',
+    installSteps: [
+        { step: '安装 Test Generator', detail: '/install test-generator 安装，自动检测项目中的测试框架。' },
+        { step: '选择覆盖策略', detail: '可设为全覆盖（每行代码）/智能覆盖（核心逻辑）/快速覆盖（仅公开 API）。' },
+        { step: '生成测试', detail: '/test-generate src/components/Button.tsx 为指定文件生成测试；/test-generate --all 覆盖全部。' }
+    ],
+    config: `{
+  "framework": "auto-detect",
+  "coverageTarget": 80,
+  "strategies": {
+    "unitTests": { "enabled": true, "mockExternalDeps": true },
+    "integrationTests": { "enabled": true, "useTestDatabase": true },
+    "e2eTests": { "enabled": false, "framework": "playwright" }
+  },
+  "namingPattern": "{filename}.test.{ext}",
+  "skipPatterns": ["*.types.ts", "*.constants.ts", "*.mock.ts"]
+}`,
+    useCases: ['新功能测试代码生成', '补充老项目测试覆盖率', 'TDD 开发辅助', '回归测试套件维护', '代码重构安全保障'],
+    pros: ['理解代码上下文生成有意义测试', '自动 mock 外部依赖', '覆盖率报告清晰', '支持多种断言风格', '生成的测试人类可读易修改'],
+    cons: ['复杂异步逻辑测试可能不完善', 'UI 组件测试覆盖率有限', '极端边界情况需人工补充']
+},
+
+'doc-writer': {
+    name: 'Doc Writer',
+    tier: '👍 值得一试',
+    tierClass: 'tier-b',
+    desc: '技术文档撰写助手，从代码注释和结构自动生成 API 文档、README、CHANGELOG，保持文档与代码同步。',
+    installSteps: [
+        { step: '安装 Doc Writer', detail: '/install doc-writer 安装，扫描项目现有的文档和注释风格。' },
+        { step: '配置文档模板', detail: '选择文档风格（Tech/Startup/Enterprise），配置输出格式和目录结构。' },
+        { step: '生成/更新文档', detail: '/doc-generate README 生成或更新项目说明；/doc-api 从 JSDoc/TSDoc 生成 API 文档。' }
+    ],
+    config: `{
+  "templates": {
+    "readme": "comprehensive",
+    "apiDocs": "openapi-compatible",
+    "changelog": "conventional"
+  },
+  "style": {
+    "language": "zh-CN",
+    "codeExamples": true,
+    "tocEnabled": true,
+    "badgeSection": true
+  },
+  "sync": {
+    "watchForChanges": false,
+    "autoUpdateOnCommit": false
+  }
+}`,
+    useCases: ['开源项目 README 维护', 'API 文档自动生成', '团队 Wiki 内容更新', 'CHangelog 自动整理', '新手 Onboarding 文档编写'],
+    pros: ['从代码注释直接提取信息', '中英文双语支持', '输出格式美观专业', '保持文档与代码同步', '支持多种文档框架（Docusaurus/VitePress）'],
+    cons: ['缺少注释的代码生成效果有限', '架构图/UML 需要手动补充', '无法替代人工撰写的教程类内容']
+},
+
+'translation-pro': {
+    name: 'Translation Pro',
+    tier: '👍 值得一试',
+    tierClass: 'tier-b',
+    desc: '专业翻译助手，50+ 语言互译，特别擅长技术文档翻译，保持术语一致性和上下文准确性。',
+    installSteps: [
+        { step: '安装 Translation Pro', detail: '/install translation-pro 安装，支持全文翻译和交互式翻译两种模式。' },
+        { step: '配置翻译对', detail: '设置源语言和目标语言，上传术语表（glossary）确保专业术语准确。' },
+        { step: '开始翻译', detail: '/translate file.md --from en --to zh 翻译文件；/translate --interactive 进入逐句确认模式。' }
+    ],
+    config: `{
+  "sourceLanguage": "auto",
+  "targetLanguage": "zh-CN",
+  "domain": "technology",
+  "glossary": {
+    "Skill": "技能包",
+    "Agent": "智能体",
+    "Deployment": "部署",
+    "Repository": "仓库"
+  },
+  "options": {
+    "preserveFormatting": true,
+    "preserveCodeBlocks": true,
+    "formalTone": true,
+    "contextAwareness": true
+  }
+}`,
+    useCases: ['开源项目国际化(i18n)', '技术文档中英互译', '产品 UI 多语言适配', '商务邮件翻译', '学术论文摘要翻译'],
+    pros: ['技术术语翻译准确', '保留原始排版格式', '代码块不参与翻译', '支持术语表定制', '批量文件翻译效率高'],
+    cons: ['文学类文本表现一般', '极度专业的领域术语需提供 glossary', '长文档翻译需要分段处理']
+},
+
+'data-analyst': {
+    name: 'Data Analyst',
+    tier: '👍 值得一试',
+    tierClass: 'tier-b',
+    desc: '数据分析利器，上传 CSV/Excel 数据文件即可获得统计分析、趋势洞察和可视化图表，一句话得出数据结论。',
+    installSteps: [
+        { step: '安装 Data Analyst', detail: '/install data-analyst 安装，支持 CSV、Excel、JSON、Parquet 格式。' },
+        { step: '上传数据文件', detail: '/analyze data.csv 上传数据文件，自动检测列类型、缺失值和异常值。' },
+        { step: '提问获取洞察', detail: '"上季度销售额的趋势是什么？""哪些用户群体流失率最高？" 自然语言提问即获分析结果。' }
+    ],
+    config: `{
+  "analysis": {
+    "autoDescriptiveStats": true,
+    "autoCorrelationMatrix": true,
+    "autoOutlierDetection": true,
+    "missingValueStrategy": "report"
+  },
+  "visualization": {
+    "chartTypes": ["line", "bar", "scatter", "heatmap", "pie"],
+    "theme": "dark",
+    "exportFormat": "svg"
+  },
+  "export": {
+    "formats": ["markdown", "csv-summary", "html-report"],
+    "includeRawData": false
+  }
+}`,
+    useCases: ['销售数据分析', '用户行为分析', 'A/B Test 结果解读', '财务报表分析', '运营指标监控'],
+    pros: ['自然语言查询数据', '自动发现异常值和趋势', '可视化图表精美', '无需编程基础', '支持多种数据格式'],
+    cons: ['大数据量(>100MB)处理慢', '高级统计模型有限', '不能替代专业 BI 工具']
+},
+
+'prompt-engineer': {
+    name: 'Prompt Engineer',
+    tier: '👍 值得一试',
+    tierClass: 'tier-b',
+    desc: '提示词工程专家，帮你构建高质量的结构化 Prompt，掌握 Chain-of-Thought、Few-Shot、Self-Consistency 等前沿技巧。',
+    installSteps: [
+        { step: '安装 Prompt Engineer', detail: '/install prompt-engineer 安装，自带 50+ 高质量 Prompt 模板库。' },
+        { step: '描述你的目标', detail: '告诉它你想让 AI 做什么："帮我写一个能分析用户情绪的 Prompt"' },
+        { step: '迭代优化', detail: '/prompt-optimize 你的_prompt --goal "提高准确率" 自动分析和改进 Prompt 结构。' }
+    ],
+    config: `{
+  "techniques": [
+    "chain-of-thought",
+    "few-shot-learning",
+    "self-consistency",
+    "reAct",
+    "tree-of-thought"
+  ],
+  "optimization": {
+    "maxIterations": 5,
+    "evalMetric": "accuracy",
+    "testCases": "auto-generate"
+  },
+  "output": {
+    "includeExplanation": true,
+    "includeVariants": 3,
+    "exportFormat": "markdown"
+  }
+}`,
+    useCases: ['构建高质量 AI Prompt', 'Prompt 效果 A/B 测试', 'AI Agent 工作流设计', 'Prompt 模板库管理', '团队 Prompt 规范制定'],
+    pros: ['系统化的 Prompt 设计方法论', '内置丰富模板库', '自动化 A/B 测试对比', '支持复杂 Agent 工作流设计', '持续学习最新 Prompt 技巧'],
+    cons: ['效果因任务类型差异大', '某些创意类任务难以量化优化', '需要反复迭代才能找到最佳 Prompt']
+},
+
+'markdown-master': {
+    name: 'Markdown Master',
+    tier: '💡 效率提升',
+    tierClass: 'tier-c',
+    desc: 'Markdown 排版美化师，自动格式化文档、生成目录、转换 HTML/PDF，让你的技术文档整洁又专业。',
+    installSteps: [
+        { step: '安装 Markdown Master', detail: '/install markdown-master 安装。' },
+        { step: '格式化文档', detail: '/md-format doc.md — 自动修正标题层级、列表缩进、代码块语法。' },
+        { step: '转换导出', detail: '/md-export doc.md --format pdf 将 Markdown 转换为 HTML 或 PDF。' }
+    ],
+    config: `{
+  "formatting": {
+    "headingStyle": "atx",
+    "listStyle": "consistent",
+    "codeBlockLanguage": "enforce",
+    "maxLineLength": 120,
+    "trailingSpaces": "remove"
+  },
+  "toc": {
+    "enabled": true,
+    "maxDepth": 3,
+    "style": "numbered"
+  },
+  "export": {
+    "pdf": { "pageSize": "A4", "margin": "20mm" },
+    "html": { "includeCss": true, "theme": "github" }
+  }
+}`,
+    useCases: ['技术博客排版', 'README 美化', '笔记整理归档', 'Markdown 转 PDF', '自动生成目录'],
+    pros: ['一键格式化杂乱 Markdown', '自动生成多层目录', 'GitHub 风格 HTML 导出', 'PDF 输出排版精美', '支持 GFM 语法全集'],
+    cons: ['复杂表格处理有限', 'Math公式渲染依赖外部库', '不支持双向转换(MD→MD编辑)']
+},
+
+'self-improving-agent': {
+    name: 'Self-Improving Agent',
+    tier: '⭐ 强烈推荐',
+    tierClass: 'tier-a',
+    desc: '自进化 AI 助手，能够从每次交互中的错误和反馈进行学习，持续优化自身能力和知识储备，越用越懂你。',
+    installSteps: [
+        { step: '安装 Self-Improving Agent', detail: '/install self-improving-agent 安装。这是元级别 Skill——帮助你优化其他所有 Skill 的使用方式。' },
+        { step: '启用学习记忆', detail: '配置 learning memory 存储路径，开启错误记录和能力追踪功能。' },
+        { step: '开始使用', detail: '正常使用 Claude Code 即可。Agent 会在后台记录有效模式和失败案例，自动调整策略。' }
+    ],
+    config: `{
+  "learning": {
+    "enableErrorTracking": true,
+    "enableSuccessPatternCapture": true,
+    "memoryPath": ".claude/learning-memory/",
+    "reviewCycle": "daily"
+  },
+  "improvementAreas": [
+    "code_generation_accuracy",
+    "debugging_efficiency",
+    "command_selection",
+    "context_management"
+  ],
+  "behavior": {
+    "autoReflectOnError": true,
+    "suggestAlternatives": true,
+    "adaptToUserStyle": true
+  }
+}`,
+    useCases: ['持续优化 AI 交互质量', '积累项目专属知识', '减少重复犯错', '发现更高效的工作流程', '个性化 AI 行为调整'],
+    pros: ['真正的自学习能力', '跨会话持久化记忆', '主动反思和改进', '与其他 Skill 协同增强', '透明可查看的学习日志'],
+    cons: ['初期学习曲线（需要积累样本）', '存储空间随时间增长', '隐私敏感场景需谨慎使用', '过度优化可能导致创新性下降']
 }
 };
 
